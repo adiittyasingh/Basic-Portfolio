@@ -1,2 +1,192 @@
-# Basic-Portfolio
-I just needed to upload it urgently, upgrades on the way with react and javascript.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aditya Singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .section {
+            padding: 40px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .skills, .experience, .projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div, .experience div, .projects div {
+            width: 48%;
+            margin-right: 4%;
+            margin-bottom: 20px;
+        }
+        .skills div:last-child, .experience div:last-child, .projects div:last-child {
+            margin-right: 0;
+        }
+        .card {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            color: #444;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #666;
+        }
+        footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aditya Singh - Electronics & Robotics Engineering</h1>
+        <p>Innovating with AI, Robotics, and Aerospace Technology</p>
+    </header>
+
+    <div class="section">
+        <h2>About Me</h2>
+        <p>Hello! I am Aditya Singh, a third-year Electronics and Communication Engineering student at ABES Engineering College. I specialize in robotics, AI, and drone technology. I've worked on projects ranging from building line follower robots to developing UAVs and implementing advanced computer vision techniques. My passion is creating innovative solutions that combine hardware, software, and machine learning.</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <p>Python, C, Embedded C, Arduino Programming</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Prompt Design with Vertex AI, Gemini, Imagen, OpenCV</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>Robotics</h3>
+                    <p>Line Follower Robots, ROS2, SLAM, ESP32, Embedded Systems</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>UAV Design</h3>
+                    <p>H-cum X Configuration Quadcopter, CAD Modeling, Fusion 360, Drone Assembly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div>
+                <div class="card">
+                    <h3>Intern Trainee at Aerosense Technologies Pvt Ltd</h3>
+                    <p>Nov 2023 - Nov 2023</p>
+                    <p>Mastered UAV design process from software simulation to physical assembly. Designed and tested an X configuration quadcopter using Autodesk Fusion 360.</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>Content Writer & Social Media Strategist at WhiteRock Media</h3>
+                    <p>July 2023 - June 2024</p>
+                    <p>Created content and strategies for PR campaigns around the Lok Sabha Elections 2024, targeting electors and drafting communication plans.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div>
+                <div class="card">
+                    <h3>Line Follower Robot</h3>
+                    <p><strong>Technologies:</strong> ESP32, Sensors, Motor Driver</p>
+                    <p>A fully functional line follower robot built using the ESP32 microcontroller, capable of autonomously following a path using sensors. Currently working on upgrading it into a mapping robot using ROS2 and SLAM.</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>Mapping Robot with ROS2 & SLAM</h3>
+                    <p><strong>Technologies:</strong> ROS2, SLAM, ESP32, Sensors</p>
+                    <p>In progress: Upgrading the line follower robot into a mapping robot using ROS2 and Simultaneous Localization and Mapping (SLAM) for real-time path generation and obstacle detection.</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>H-cum X Configuration Quadcopter</h3>
+                    <p><strong>Technologies:</strong> Drone Design, Fusion 360, PID Control</p>
+                    <p>Designed and assembled a custom quadcopter using an H-cum X configuration. Fine-tuned the flight dynamics and control systems to ensure stable flight and high maneuverability.</p>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h3>Person Detection & Counter using ESP32 & OpenCV</h3>
+                    <p><strong>Technologies:</strong> ESP32, OpenCV, Python</p>
+                    <p>Developed a person detection and counter system using the ESP32 camera module and OpenCV. The system detects and counts people in real-time, providing valuable insights for security and crowd management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Team Vice Captain, National Level Drone Team (2024)</li>
+            <li>Winner of Best Presenter & Idea Award (Sep 2023) at Innovator & Startup Workshop</li>
+            <li>Google Cloud Skill Badge: <br> <img src="C:\Users\Aditya Singh\Downloads\Certificates and Skill badges" alt="Build Real World AI Applications with Gemini and Imagen" style="width: 100%; max-width: 400px; border-radius: 8px;" /></li>
+            <li>Google Cloud Skill Badge: <br> <img src="C:\Users\Aditya Singh\Downloads\Certificates and Skill badges" alt="Prompt Design in Vertex AI" style="width: 100%; max-width: 400px; border-radius: 8px;" /></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Connect with me:</p>
+        <p><a href="mailto:adiittyasingh.com">Email</a> | <a href="https://www.linkedin.com/in/adityasingh" target="_blank">LinkedIn</a> | <a href="https://github.com/adityasingh" target="_blank">GitHub</a></p>
+    </footer>
+    
+</body>
+</html>
